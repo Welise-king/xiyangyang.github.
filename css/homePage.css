@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+
+/* 顶部标题栏 */
+header {
+    background-color: #217ad9;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* 广告横幅 */
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* 功能菜单容器 */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* 图标容器（圆形背景） */
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 各个图标的背景色 */
+.icon.red { background-color: #ff5555; }
+.icon.orange { background-color: #ff9933; }
+.icon.green { background-color: #77cc55; }
+.icon.blue { background-color: #55bbee; }
+.icon.yellow { background-color: #ffcc33; }
+.icon.purple { background-color: #9977dd; }
+.icon.light-purple { background-color: #cc88dd; }
+.icon.blue-lock { background-color: #3388ee; }
+.icon.teal { background-color: #33ccbb; }
+
+.menu-item p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* 底部导航栏 */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    padding: 10px 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-item.active {
+    color: #ff3333;
+}
+
+.nav-item img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+}
+
+/* 适配移动端 */
+@media screen and (max-width: 768px) {
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .icon img {
+        width: 25px;
+        height: 25px;
+    }
+    .menu-item p {
+        font-size: 16px;
+    }
+}
